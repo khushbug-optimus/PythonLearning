@@ -1,0 +1,132 @@
+# int variable
+age = 14
+
+# float variable
+amount = 30.5
+
+# string variable
+name = "Scott"
+
+# boolean variable & None
+iserror = True
+undefined = None
+
+
+def add_numbers(a, b):
+    print(a + b)
+
+# correct call
+
+add_numbers(5, 4)
+
+add_numbers(5, "a")
+
+# If statement
+
+num = 5
+if num == 5:
+    print("Number is 5")
+else:
+    print("Number is not 5")
+
+# Truthy and Falsy Values - any number greater than 0 is having truthy value.
+# Any string as long as it is not empty is having truthy value
+if num:
+    print("Number is defined Thruthy")
+if name:
+    print("Name is defined and Truthy")
+
+
+# Not if
+
+if num != 5:
+    print("this code will not execute")
+
+if not undefined:
+    print("This will not execute")
+
+# Multiple conditions
+
+if num == 5 and name:
+    print("This will execute")
+
+if num ==6 or name:
+    print("This will also execute")
+
+# Ternary If statements
+a = 1
+b = 2
+
+"bigger" if a>b else "smaller"
+# Lists
+
+students_names=[]
+
+students_names = ["Mark", "Katarina", "Jassika"]
+students_names.append("Homer")
+
+"Mark" in students_names
+
+len(students_names)
+del students_names[2]
+
+# List Slicing
+
+students_names[1:]
+
+students_names[1:-1]
+
+# more methods of list - Pop, reverse
+
+
+# Printing elements using for loop
+for name in students_names:
+    print("Student name is {0}" .format(name))
+
+x=0
+for index in range(10):
+    x = x + 10 #x+=10
+    print("Value of x is {0}".format(x))
+# range (5,10) = [5,6,7,8,9]
+# range (5,10,2) = [5,7,9]
+
+# while loops
+
+x = 0
+while x < 10:
+    print("count is {0}".format(x))
+    x +=1
+
+while True:
+    if x == 43:
+        break
+    print("value of x is {0}".format(x))
+
+# Dictionaries
+
+student = {
+    "name": "Ruhi",
+    "age": 22,
+    "feedback": None
+}
+
+student["name"]
+student["last_name"]
+student.get("last_name","Unknown")
+student.keys()
+student.values()
+student["name"] = "James"
+del student["name"]
+
+# exception handling
+
+try:
+    student["last_name"]
+except KeyError:
+    print("Error in printing last name")
+
+print("Now code will execute")
+
+
+
+
